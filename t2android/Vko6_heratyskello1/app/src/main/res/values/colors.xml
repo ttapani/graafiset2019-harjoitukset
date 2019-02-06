@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="timeUnit_fill">#92A1F2</color>
+    <color name="timeUnit_border">#7F8C3A</color>
+
+    <color name="deepGreen">#4c9d89</color>
+    <color name="lightGreen">#9CEC93</color>
+    <color name="green">#7F8C3A</color>
+    <color name="deepBlue">#0000FF</color>
+
+    <color name="red">#FF0000</color>
+</resources>

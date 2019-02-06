@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.th.example.vko6_heratyskello1.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="331dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/hoursView"
+                    style="@style/textview_timeunit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    tools:layout_editor_absoluteX="70dp"
+                    tools:layout_editor_absoluteY="377dp" />
+
+                <TextView
+                    android:id="@+id/minutesView"
+                    style="@style/textview_timeunit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    tools:layout_editor_absoluteX="140dp"
+                    tools:layout_editor_absoluteY="377dp" />
+
+                <TextView
+                    android:id="@+id/secondsView"
+                    style="@style/textview_timeunit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    tools:layout_editor_absoluteX="213dp"
+                    tools:layout_editor_absoluteY="377dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="221dp">
+
+                    <Button
+                        android:id="@+id/removeSecond"
+                        style="@style/button_timeadjust"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:enabled="false"
+                        android:text="-"
+                        app:layout_constraintStart_toEndOf="@+id/removeMinute"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/removeMinute"
+                        style="@style/button_timeadjust"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="--"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="279dp">
+
+                    <Button
+                        android:id="@+id/addMinute"
+                        style="@style/button_timeadjust"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="++"
+                        app:layout_constraintStart_toEndOf="@+id/addSecond"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/addSecond"
+                        style="@style/button_timeadjust"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="+"
+                        app:layout_constraintStart_toEndOf="@+id/removeSecond"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/stopAlarm"
+                style="@style/button_stopalarm"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="STOP ALARM"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alwaysDrawnWithCache="true"
+            android:gravity="top|right|center"
+            android:orientation="vertical"
+            android:paddingRight="6dp"
+            android:paddingTop="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/adjustTime"
+                style="@style/button_adjuststate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIME" />
+
+            <Button
+                android:id="@+id/adjustAlarm"
+                style="@style/button_adjuststate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALARM" />
+
+            <Button
+                android:id="@+id/setSnooze"
+                style="@style/button_adjuststate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SNOOZE" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
